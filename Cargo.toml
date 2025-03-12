@@ -1,0 +1,10 @@
+[package]
+name = "gym_timer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.3", features = ["derive"] } # CLI-Argumente
+serde = { version = "1.0", features = ["derive"] } # JSON-Handling
+serde_json = "1.0" # Falls du JSON-Speicherung nutzt
+tokio = { version = "1", features = ["full"]}
