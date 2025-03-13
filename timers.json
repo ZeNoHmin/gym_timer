@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "name": "Curls",
+    "duration": 6,
+    "pause": 3,
+    "repetitions": 5
+  }
+]

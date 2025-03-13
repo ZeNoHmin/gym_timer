@@ -1,6 +1,6 @@
 use clap::{Parser, Subcommand};
 
-#[derive(Parser)]
+#[derive(Parser, Clone, Debug)]
 #[command(name = "Gym Timer")]
 #[command(version = "1.0")]
 #[command(about = "Ein CLI-Tool für Trainings-Timer")]
@@ -9,10 +9,11 @@ pub struct Cli {
     pub command: Commands,
 }
 
-#[derive(Subcommand)]
+#[derive(Subcommand, Clone, Debug)]
 pub enum Commands {
     //Starte einen Timer
     Start {
+        #[arg(short, long)]
         name: String,
     },
     //Lösche einen Timer

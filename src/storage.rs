@@ -1,6 +1,8 @@
+use crate::timer::start_timer;
 use serde::{Deserialize, Serialize};
 use std::fs::{File, OpenOptions};
-use std::io::{self, Read, Write};
+use std::io::{self, Read, Write}; // import timer function
+use tokio::time::{sleep, Duration};
 
 const FILE_PATH: &str = "timers.json"; //Timers
 
@@ -11,8 +13,42 @@ pub struct Timer {
     pub pause: u32,
     pub repetitions: u32,
 }
+pub async fn start_timer_from_storage(name: &str) {
+    let timers = load_timers();
+    //load timer from list
 
+    //search for a matching timer
+    if let Some(timer) = timers.iter().find(|t| t.name == name) {
+        println!(
+            "Start timer {}, {}s training, {}s pause, {} repetitions", // display timer
+            // informations
+            timer.name,
+            timer.duration,
+            timer.pause,
+            timer.repetitions
+        );
+
+        for i in 1..=timer.repetitions {
+            println!("Round {}/{}", i, timer.repetitions); //display the amount of reps
+            start_timer(&timer.name, timer.duration).await;
+
+            if i < timer.repetitions {
+                println!("Pause {}s", timer.pause); //Pause timer
+                for j in (1..=timer.pause).rev() {
+                    println!("Remaining time:{}", j);
+                    sleep(Duration::from_secs(1)).await;
+                }
+                //timer in
+                //u64 as only positive timers are allowed
+            }
+        }
+        println!("Timer {} finished", timer.name);
+    } else {
+        println!("Timer {} not found", name);
+    }
+}
 pub fn save_timers(timers: &Vec<Timer>) {
+    //load timer file write and save it
     let json = serde_json::to_string_pretty(timers).unwrap();
     let mut file = OpenOptions::new()
         .write(true)

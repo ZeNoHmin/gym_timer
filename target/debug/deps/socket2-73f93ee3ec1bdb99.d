@@ -1,0 +1,9 @@
+/Users/dimitriospsomas/Documents/projects/Serious_i_guess/gym_timer/target/debug/deps/libsocket2-73f93ee3ec1bdb99.rmeta: /Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/lib.rs /Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/sockaddr.rs /Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/socket.rs /Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/sockref.rs /Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/sys/unix.rs
+
+/Users/dimitriospsomas/Documents/projects/Serious_i_guess/gym_timer/target/debug/deps/socket2-73f93ee3ec1bdb99.d: /Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/lib.rs /Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/sockaddr.rs /Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/socket.rs /Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/sockref.rs /Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/sys/unix.rs
+
+/Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/lib.rs:
+/Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/sockaddr.rs:
+/Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/socket.rs:
+/Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/sockref.rs:
+/Users/dimitriospsomas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.5.8/src/sys/unix.rs:
